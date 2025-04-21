@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Hub</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google AdSense script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5653832463617434"
+     crossorigin="anonymous"></script>
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-button');
+      tabs.forEach(t => t.classList.remove('active'));
+      buttons.forEach(b => b.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+      document.querySelector(`[data-tab='${tabId}']`).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="abc-removebg-preview.png" alt="Logo" style="width: 150px;" />
+      <h1>Welcome to Media Hub</h1>
+      <p>Explore our full range of premium services and Fiverr Gigs</p>
+      <a href="#tabs" class="btn">Start Exploring 🚀</a>
+    </div>
+  </header>
+
+  <section id="tabs">
+    <div class="container">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="services" onclick="showTab('services')">📱 Services</button>
+        <button class="tab-button" data-tab="fiverr" onclick="showTab('fiverr')">🛒 Fiverr Gigs</button>
+        <button class="tab-button" data-tab="contact" onclick="showTab('contact')">📞 Contact</button>
+      </div>
+
+      <div id="services" class="tab-content active">
+        <h2 class="section-heading">📱 Social Media Services</h2>
+        <ul>
+          <li><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" class="tab-icon" /> TikTok Agency Ad Accounts</li>
+          <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="tab-icon" /> Instagram Growth & Reels Boost</li>
+          <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="tab-icon" /> Facebook & Instagram Ads Setup</li>
+          <li><img src="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" class="tab-icon" /> YouTube Monetization (Watch Time + Subs)</li>
+          <li><img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" class="tab-icon" /> SEO Titles, Thumbnails, Descriptions</li>
+        </ul>
+      </div>
+
+      <div id="fiverr" class="tab-content">
+        <h2 class="section-heading">🛒 Fiverr Gigs</h2>
+        <div class="fiverr-links">
+          <a href="https://www.fiverr.com/s/o8jeoQG" target="_blank">Gig 1 - TikTok Business Center</a><br>
+          <a href="https://www.fiverr.com/s/EgaXKEY" target="_blank">Gig 2 - TikTok Ad Activation</a><br>
+          <a href="https://www.fiverr.com/s/YRB0mdq" target="_blank">Gig 3 - Instagram Reels Boost</a><br>
+          <a href="https://www.fiverr.com/s/R7GNbl8" target="_blank">Gig 4 - YouTube Monetization</a><br>
+          <a href="https://www.fiverr.com/s/XLdeWNZ" target="_blank">Gig 5 - Facebook Ads</a><br>
+          <a href="https://www.fiverr.com/s/rEqerr0" target="_blank">Gig 6 - SEO Optimization</a><br>
+          <a href="https://www.fiverr.com/s/0bA605v" target="_blank">Gig 7 - Full Social Growth Package</a>
+        </div>
+      </div>
+
+      <div id="contact" class="tab-content">
+        <h2 class="section-heading">📞 Contact Info</h2>
+        <p>WhatsApp: <strong><a href="https://wa.me/923130619524" target="_blank">+92 313 0619524</a></strong></p>
+        <p>Email: <strong><a href="mailto:muneebtach@gmail.com">muneebtach@gmail.com</a></strong></p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1Yty99zU2S/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="40">
+          </a>
+          <a href="https://www.instagram.com/janealex3q/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="40">
+          </a>
+          <a href="https://www.tiktok.com/@janealex4?_t=ZN-8vilOc8TL9y&_r=1" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok" width="40">
+          </a>
+          <a href="https://discord.gg/VNhZYGkA" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord" width="40">
+          </a>
+          <a href="https://x.com/MuneebTach97158" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/3670/3670151.png" alt="Twitter/X" width="40">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google AdSense Ad Code (Add this section where you want to show ads) -->
+  <section id="ads">
+    <div class="container">
+      <h2>Check Out Our Premium Ads</h2>
+      <div class="adsense-ad">
+        <!-- Google AdSense Ad -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5653832463617434"
+             data-ad-slot="XXXXXX"
+             data-ad-format="auto"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Media Hub | All rights reserved ❤️</p>
+  </footer>
+</body>
+</html>
